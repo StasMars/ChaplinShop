@@ -3,31 +3,20 @@ from django.http import HttpResponse
 
 def index(request):
     context = {
-        'title': 'Home',
-        'content': 'Главная страница магазина - Chaplin',
-        'list': ['first', 'second'],
-        'dict': {'first': 1},
-        'is_auth': True
-
+        'title': 'Chaplin - Главная',
+        'content': 'Chaplin'
     }
 
     return render(request, 'main/index.html', context)
 
 
 def about(request):
-    return HttpResponse('About page')
-
-
-def prices(request):
     context = {
-        'title': 'Prices',
-        'content1': 'Авторизируйтесь, чтобы увидеть цены на продукты',
-        'content2': 'Цены на продукты',
-        'price1': 1000,
-        'price2': 2000,
-        'price3': 3000,
-        'price4': 4000,
-        'is_auth': True
+        'title': 'Chaplin - О нас',
+        'content': 'О нас',
+        'text_on_page': 'Магазин одежды в стиле фильмов с Чарли Чаплином. Enjoy.'
     }
 
-    return render(request, 'main/prices.html', context)
+    return render(request, 'main/about.html', context)
+
+
