@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+  <meta charset="utf-8"/> 
+  <title>{{ title }}</title>
+</head>
+<body>
+    {% if is_auth %}
+        <p>{{ content2 }}</p>
+        <p>{{ price1 }}</p>
+        <p>{{ price2 }}</p>
+        <p>{{ price3 }}</p>
+        <p>{{ price4 }}</p>
+    {% else %}
+        <p>{{ content1 }}</p>    
+    {% endif %}
+</body>
+</html>
