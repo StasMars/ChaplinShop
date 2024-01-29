@@ -1,4 +1,4 @@
-{% extends "main/base.html" %}
+{% extends "base.html" %}
 {% load static %}
 {% load goods_tag %}
 
@@ -107,7 +107,7 @@
 
 </div>
     <!-- Пагинация -->
-    {% if goods %}
+    {% if not goods %}
         <nav aria-label="Page navigation example">
             <ul class="pagination justify-content-center my-4">
                 <div class="custom-shadow d-flex">
