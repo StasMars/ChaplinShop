@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="{% static "deps/css/my_footer_css.css" %}">
 {% endblock css %}
 
+{% block model_cart %}
+{% include "includes/cart_button.html" %}
+{% endblock model_cart %}
+
 {% block content %}
     <h2 class="mt-5 pt-5"><strong>{{ content }}</strong></h2>
     <p class="pt-4">{{ text_on_page }}</p>

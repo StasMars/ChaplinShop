@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block model_cart %}
+{% include "includes/cart_button.html" %}
+{% endblock model_cart %}
+
 {% block content %}
 <div class="row">
     <div class="container mt-5">
