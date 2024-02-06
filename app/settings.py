@@ -40,12 +40,12 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "django.contrib.postgres",
     "debug_toolbar",
-    
 
     'main',
     'goods',
     'users',
-    'carts'
+    'carts',
+    'orders'
 ]
 
 MIDDLEWARE = [
@@ -132,7 +132,7 @@ USE_TZ = True
 STATIC_URL = "static/"
 
 STATICFILES_DIRS = [
-    BASE_DIR / 'static',
+    BASE_DIR / "static",
     ]
 
 MEDIA_URL  = 'media/'
